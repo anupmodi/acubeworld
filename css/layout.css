@@ -334,7 +334,7 @@ ul#nav li.active a { color: #11ABB0; }
 	transition: all 0.3s ease-in-out;
 }
 .portfolio-item .item-wrap a { display: block;}
-.portfolio-item .item-wrap a img {width:216px;height:225px; }
+.portfolio-item .item-wrap a img {width:auto;height:225px; }
 .portfolio-item .portfolio-item-meta { padding: 5px 0;line-height:60px;height:60px; }
 .portfolio-item .portfolio-item-meta h5 a {
    font: 13px/24px montserrat-bold, sans-serif;
@@ -1220,7 +1220,8 @@ footer .social-links li:first-child { margin-left: 0; }
    /* portfolio section
    -------------------------------------------------------------------- */
    #portfolio #portfolio-wrapper { margin-top: 12px; }
-   #portfolio #portfolio-wrapper .col { width: 33.33333%; }
+   #portfolio #portfolio-wrapper .col { width: 33.33333%; 
+   
 
    /* journal section
    -------------------------------------------------------------------- */
