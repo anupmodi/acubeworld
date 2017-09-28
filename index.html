@@ -30,7 +30,20 @@
 	================================================== -->
 	<link rel="shortcut icon" href="favicon.ico" >
 
-
+<script type="text/javascript">
+	visible = false; //var that keeps track if the content is visible.
+	function toggle() {
+	  if(visible) {
+		visible = false;
+		document.getElementById("showText").innerHTML = 'Show more';
+		document.getElementById("hiddenText").style.display = 'none';
+	  } else {
+		visible = true;
+		document.getElementById("showText").innerHTML = 'Show Less';
+		document.getElementById("hiddenText").style.display = 'block';
+	  }
+}
+</script>
 </head>
 
 <body data-spy="scroll" data-target="#nav-wrap">
@@ -151,7 +164,9 @@
 
          <div class="col two-thirds">
             <div class="intro">
-             <p>ACube Worldwide is a trading home for both international and domestic import and export activity. Main activities undertaken by the Company include direct and indirect exports, imports of various goods and merchandise for and from around the world. We have a customer base of over 100 from around the world, specifically in regions such as North & South America, Europe, South East Asia & Australia with a vendor base for various products over 100 suppliers.
+             <p>ACube Worldwide is a trading home for both international and domestic import and export activity.
+			 Main activities undertaken by the Company include direct and indirect exports, imports of various goods 
+			 and merchandise for and from around the world.
 			 </p>
             </div>
          </div>
@@ -232,7 +247,7 @@
 
 			   <div class="col portfolio-item">
                <div class="item-wrap">
-					   <a href="#" data-reveal-id="modal-01"><img src="images/portfolio/apparel_textiles.jpg" alt=""/></a>
+					   <a href="#" data-reveal-id="modal-01"><img src="images/portfolio/apparel_textiles1.jpg" alt=""/></a>
 					   <div class="portfolio-item-meta">
 						   <h5><a href="#">Apparel & Textiles</a></h5>
 					   </div>
@@ -241,7 +256,7 @@
 
             <div class="col portfolio-item">
                <div class="item-wrap">
-					   <a href="#" data-reveal-id="modal-02"><img src="images/portfolio/fashion_jewelry_accessories.jpg" alt=""/></a>
+					   <a href="#" data-reveal-id="modal-02"><img src="images/portfolio/fashion_jewelry_accessories1.jpg" alt=""/></a>
 					   <div class="portfolio-item-meta">
 						   <h5><a href="#"> Fashion Jewelry & Accessories</a></h5>
 					   </div>
@@ -250,7 +265,7 @@
 
             <div class="col portfolio-item">
                <div class="item-wrap">
-					   <a href="#" data-reveal-id="modal-03"><img src="images/portfolio/handicrafts_home_furnishings.jpg" alt=""/></a>
+					   <a href="#" data-reveal-id="modal-03"><img src="images/portfolio/handicrafts_home_furnishings1.jpg" alt=""/></a>
 					   <div class="portfolio-item-meta">
 						   <h5><a href="#">Handicrafts and Home Furnishings</a></h5>
 					   </div>
@@ -259,7 +274,7 @@
 
             <div class="col portfolio-item">
                <div class="item-wrap">
-					   <a href="#" data-reveal-id="modal-04"><img src="images/portfolio/handmade_paper_jute_products.jpg" alt="" /></a>
+					   <a href="#" data-reveal-id="modal-04"><img src="images/portfolio/handmade_paper_jute_products1.jpg" alt="" /></a>
 					   <div class="portfolio-item-meta">
 						   <h5><a href="#">Handmade Paper and Jute Products</a></h5>
 					   </div>
@@ -423,19 +438,23 @@
 
       <div class="row section-head">
          <div class="col full">
-            <h2>About Us</h2>
+			<h2>About Us</h2>
             <p class="desc">How did ACube Enterprises LLP come about?</p>
 			<p class="intro">			
 				ACube Worldwide was founded in 2017 by professionals who left behind their flourishing corporate careers and returned to India.
 			</p>	
 			<p class="intro">
-				While in the States, there was always a lingering thought to return to India someday, to go on our own instincts, to start our own company! After having lived two decades across USA, and having diverse work experience and our individual strengths in Finance, Operations, Technology and Marketing and in various fields from consulting to project management to product sourcing and marketing – we all knew that we could use our skill sets and create something wonderful with our experience in the ever-growing India and this Global marketplace! So in 2011, we all finally mustered up the courage and quit our jobs and relocated to India with a strong conviction to put to test everything we had learnt in our prior lives in creating a specialty trading home.
-			</p>	
-			<p class="intro">
-				We found that market lacks specialists who can assist in sourcing from India and thus we got together and started ACube worldwide to use the power of technology, and process rigor to facilitate transparency and specialization in product consulting, designing, sourcing and purchasing.
+				While in the States, there was always a lingering thought to return to India someday, to go on our own instincts, to start our own company!
 			</p>
 			
-			<div class="intro" style="display: none;" id="hiddenText">		
+			
+			<div class="intro" id="hiddenText" style="display:none;">	
+				<p>
+				After having lived two decades across USA, and having diverse work experience and our individual strengths in Finance, Operations, Technology and Marketing and in various fields from consulting to project management to product sourcing and marketing – we all knew that we could use our skill sets and create something wonderful with our experience in the ever-growing India and this Global marketplace! So in 2011, we all finally mustered up the courage and quit our jobs and relocated to India with a strong conviction to put to test everything we had learnt in our prior lives in creating a specialty trading home.
+				</p>	
+				<p>
+					We found that market lacks specialists who can assist in sourcing from India and thus we got together and started ACube worldwide to use the power of technology, and process rigor to facilitate transparency and specialization in product consulting, designing, sourcing and purchasing.
+				</p>
 				<p class="desc"> What is our Vision? </p>
 				<p>
 					We specialize in bringing unique products to the world! We strive to build a business and a personal relationship based on core values of trust, integrity, longevity and understanding with our partners and clients.
@@ -507,7 +526,7 @@
 					We realized that there was a gap in the market. There were big buyers like format stores who went to the big factories and required 10-20000 pieces in production. However, these factories did not entertain small entrepreneurs and buyers, who were left in the lurch to either buy at retail prices and resell at high prices in their home country or order high quantities and be left with a lot of dead-stock. IN order to address this, we started our company to provide solutions to the small buyer who wants low quantities, maybe just experiment with certain products; small boutique buyers, entrepreneurs. For us it’s not just business, it’s about building a long lasting bond and relationship and to be a part of our buyers and partners journey of growth , We see ourselves as facilitators and enablers for the global buyer who wants a piece of India.
 				</p>
 			</div>
-			<a href="#" onclick="$('#hiddenText').show(); return false;">Show more...</a>
+			<div id="showText" onclick='toggle()' style="cursor:pointer;">Show more...</div>
          </div>
       </div>
 
