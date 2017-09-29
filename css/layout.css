@@ -334,7 +334,7 @@ ul#nav li.active a { color: #11ABB0; }
 	transition: all 0.3s ease-in-out;
 }
 .portfolio-item .item-wrap a { display: block;}
-.portfolio-item .item-wrap a img {width:216;max-width:270px;height:225px; }
+.portfolio-item .item-wrap a img {width:auto;height:225px; }
 .portfolio-item .portfolio-item-meta { padding: 5px 0;line-height:60px;height:60px; }
 .portfolio-item .portfolio-item-meta h5 a {
    font: 13px/24px montserrat-bold, sans-serif;
