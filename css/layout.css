@@ -264,18 +264,18 @@ ul#nav li.active a { color: #b6d969; }
 /* ================================================================== */
 
 #services {
-   background: #1b1e21 url(../images/patterns/servicesbg.png);
+   background: #516534;
    padding-top: 30px;
    padding-bottom: 20px;
-   color: #4E565F;
+   color: #fff;
 }
 
 #services a, #services a:visited  { color: #C4C4C4; }
 #services a:hover, #services a:focus { color: #11ABB0; }
 
-#services .section-head h2 { color: #516534; }
+#services .section-head h2 { color: #fff; }
 #services .section-head p.desc,
-#services .section-head .intro { color: #707B89; }
+#services .section-head .intro { color: #fff; }
 
 .services-wrapper { margin-top: 42px; }
 .services-wrapper .col {
@@ -644,19 +644,19 @@ ul#nav li.active a { color: #b6d969; }
 /* ================================================================== */
 
 #contact {
-   background-color: #25292D;
+   background-color: #b6d969;
    padding-top: 30px;
    padding-bottom: 10px;
-   color: #707B89;
+   color: #fff;
 }
 
 #contact a, #contact a:visited  { color: #C4C4C4; }
 #contact a:hover, #contact a:focus { color: #11ABB0; }
 
 #contact .section-head { margin-bottom: 5px; }
-#contact .section-head h2 { color: #516534; }
+#contact .section-head h2 { color: #fff; }
 #contact .section-head p.desc,
-#contact .intro { color: #57606B; }
+#contact .intro { color: #fff; }
 #contact p {  }
 
 /* contact form */
@@ -1604,6 +1604,11 @@ footer .social-links li:first-child { margin-left: 0; }
    .portfolio-item .item-wrap a img {
 		width: 100%;
 		height: auto;
+   }
+   
+   #services .section-head iframe{
+	   display:block;
+	   margin:0 auto;
    }
 
 }
