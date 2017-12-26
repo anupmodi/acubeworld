@@ -218,7 +218,7 @@ ul#nav li.active a { color: #b6d969; }
 	width: 40px;
 	height: 66px;
 	margin: 0;
-	background-color: #2D3339;
+	background-color: #516534;
 	cursor: pointer;
 	z-index: 99999;
 	opacity: 0;
@@ -236,16 +236,16 @@ ul#nav li.active a { color: #b6d969; }
 	transition: all 0.2s ease-in-out;
 }
 
-.flex-direction-nav a:hover { background-color: #11ABB0; }
+.flex-direction-nav a:hover { background-color: #b6d969; }
 
 .flex-direction-nav .flex-next {
 	right: 0px;
-	background: #2D3339 url(../images/direction-nav-right.png) no-repeat 53% 50%;
+	background: #516534 url(../images/direction-nav-right.png) no-repeat 53% 50%;
 	position: absolute;
 }
 .flex-direction-nav .flex-prev {
 	left: 0px;
-	background: #2D3339 url(../images/direction-nav-left.png) no-repeat 47% 50%;
+	background: #516534 url(../images/direction-nav-left.png) no-repeat 47% 50%;
 	position: absolute;
 }
 .flexslider:hover .flex-next,
