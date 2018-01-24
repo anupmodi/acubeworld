@@ -336,7 +336,7 @@ ul#nav li.active a { color: #b6d969; }
 .portfolio-item .item-wrap a img {display:block;width: 454px; height: 300px;}
 .portfolio-item  .item-wrap .portfolio-item-meta { padding: 10px 0;line-height:45px;height:45px; }
 .portfolio-item .item-wrap .portfolio-item-meta h5 a {
-   font: 15px/27px montserrat-bold, sans-serif;
+   font-size: 20px;
    color: #659331;
    margin-left: 7%;
 }
