@@ -35,12 +35,27 @@
 	function toggle() {
 	  if(visible) {
 		visible = false;
-		document.getElementById("showText").innerHTML = 'Show more';
+		document.getElementById("showText").innerHTML = 'Show more...';
 		document.getElementById("hiddenText").style.display = 'none';
 	  } else {
 		visible = true;
-		document.getElementById("showText").innerHTML = 'Show Less';
+		document.getElementById("showText").innerHTML = 'Show Less...';
 		document.getElementById("hiddenText").style.display = 'block';
+	  }
+	  
+	  
+}
+
+	visible2 = false; //var that keeps track if the content is visible.
+	function toggle2() {
+	  if(visible2) {
+		visible2 = false;
+		document.getElementById("showTextImpact").innerHTML = 'Show more....';
+		document.getElementById("hiddenTextImpact").style.display = 'none';
+	  } else {
+		visible2 = true;
+		document.getElementById("showTextImpact").innerHTML = 'Show Less....';
+		document.getElementById("hiddenTextImpact").style.display = 'block';
 	  }
 }
 </script>
@@ -70,6 +85,7 @@
 	               <li><a href="#intro">Home</a></li>
 	               <li><a href="#services">Mission</a></li>
 	               <li><a href="#portfolio">Products</a></li>
+				   <li><a href="#impact">Ethos</a></li>
 	               <li><a href="#journal">About Us</a></li>
                   <!--<li><a href="#about">Testimonials</a></li>-->
                   <li><a href="#contact">Contact</a></li>
@@ -98,59 +114,9 @@
 				   <div class="row">
 					   <div class="col full">
 						   <div class="slider-text">
-							   <h2>Your gateway to sourcing <span>unique</span> products from India.</h2>
+							   <h2>Unique <span>handmade</span> products by skilled artisans in India</h2>
 							   <!--p>Aenean condimentum, lacus sit amet luctus lobortis, dolores et quas molestias excepturi
                         enim tellus ultrices elit, amet consequat enim elit noneas sit amet luctu.</p-->
-						   </div>
-					   </div>
-				   </div>
-			   </li>
-			   
-			   <!-- Slide -->
-			   <li>
-				   <div class="row">
-					   <div class="col full">
-						   <div class="slider-text">
-							   <h2>FairTrade <span>|</span> HandBlock <span>|</span> Zero-Wastage <span>|</span> Chemical-Free <span>|</span> Natural Fabrics</h2>
-							   <!--p>Aenean condimentum, lacus sit amet luctus lobortis, dolores et quas molestias excepturi
-                        enim tellus ultrices elit, amet consequat enim elit noneas sit amet luctu.</p-->
-						   </div>
-					   </div>
-				   </div>
-			   </li>
-				<!-- Slide -->
-			   <li>
-				   <div class="row">
-					   <div class="col full">
-						   <div class="slider-text">
-							   <h2>We work with several <span>Not-For-profit organizations</span> to empower women in rural areas.</h2>
-							   <!--p>Aenean condimentum, lacus sit amet luctus lobortis, dolores et quas molestias excepturi
-                        enim tellus ultrices elit, amet consequat enim elit noneas sit amet luctu.</p-->
-						   </div>
-					   </div>
-				   </div>
-			   </li>
-			   
-			  		   
-			   <!-- Slide -->
-			   <li>
-				   <div class="row">
-					   <div class="col full">
-						   <div class="slider-text">
-							   <h2>Transparency <span>|</span> Effective Communication <span>|</span> Quality Assurance <span>|</span> Competitive Global Pricing <span>|</span> End To End Solutions <span>|</span> Timely Delivery</h2>
-							   <!--p>Aenean condimentum, lacus sit amet luctus lobortis, dolores et quas molestias excepturi
-                        enim tellus ultrices elit, amet consequat enim elit noneas sit amet luctu.</p-->
-						   </div>
-					   </div>
-				   </div>
-			   </li>
-			   
-			   <!-- Slide -->
-			   <li>
-				   <div class="row">
-					   <div class="col full">
-						   <div class="slider-text">
-								<script type='text/javascript' src='https://libs.a2zinc.net/Common/JS/10.6.0.0/a2zWidget.js'></script><script type='text/javascript' id='exWidget'>new a2z.Widget('gM%2bM1z2efQdG%2b80vAgrVYldily4MF7jwI%2bvoQf0xjKDx%2ff%2f3oqsywXi%2fTjKM5ggR',845281,'https://libs.a2zinc.net/Common/Widgets/ExhibitorBadge.aspx',1318,726262,330,200).render();</script>
 						   </div>
 					   </div>
 				   </div>
@@ -162,6 +128,24 @@
 
    </section> <!-- Intro Section End-->
    
+     <!-- News Section
+   ================================================== -->
+    <!--<section id="news">
+		 <div class="row section-head">
+			<h2>Meet Us & Press</h2>
+			<div class="col one-third">
+				<script type='text/javascript' src='https://libs.a2zinc.net/Common/JS/10.6.0.0/a2zWidget.js'></script><script type='text/javascript' id='exWidget'>new a2z.Widget('gM%2bM1z2efQdG%2b80vAgrVYldily4MF7jwI%2bvoQf0xjKDx%2ff%2f3oqsywXi%2fTjKM5ggR',845281,'https://libs.a2zinc.net/Common/Widgets/ExhibitorBadge.aspx',1318,726262,330,200).render();</script>
+			</div>
+			<div class="col two-thirds">
+				<div><a href="http://handeyemagazine.com/content/passion-project">Acube World Elevates One-Stop-Shopping</a></div>
+				<div><a href="http://handeyemagazine.com/content/passion-project">NYNOW Incubator selected ACube World as top Artisan products company from India</a></div>
+			</div>
+		 </div>	
+	</section> <!-- News Section End -->
+	
+	
+	      <!-- Our Impact Section
+   ================================================== -->
 
 
    <!-- Services Section
@@ -171,16 +155,15 @@
 
          <div class="col full">
             <h2>Mission</h2>
-            <p class="desc">What do we do?</p>
 			<!--div>
 				<script type='text/javascript' src='https://libs.a2zinc.net/Common/JS/10.6.0.0/a2zWidget.js'></script><script type='text/javascript' id='exWidget'>new a2z.Widget('gM%2bM1z2efQdG%2b80vAgrVYldily4MF7jwI%2bvoQf0xjKDx%2ff%2f3oqsywXi%2fTjKM5ggR',845281,'https://libs.a2zinc.net/Common/Widgets/ExhibitorBadge.aspx',1318,726262,330,200).render();</script>
 			</div-->
 
-             <p class="intro">We strive to build a business and a personal relationship based on core values of trust, 
-				integrity, longevity and understanding with our partners and clients.<br /><br />
+             <p class="intro">We strive to build a professional and a personal relations based on core values of trust, 
+				integrity, longevity by understanding the needs of our customers and in working with skilled artisans who produce unique products.</p>
 
-				With our international and domestic diverse professional backgrounds our primary focus is 
-				on we understand timelines, deadlines for deliveries, quality assurance, standards, and ethics;
+			 <p class="intro">With our diverse international and domestic backgrounds, our primary focus is 
+				to have an ethical and professional approach to business, meet and beat timelines for deliveries, have benchmark quality standards on our products and services;
 				most importantly - we connect!
 			 </p>
          </div>
@@ -239,8 +222,8 @@
       </div> --><!--end row --> 
 
    </section> <!-- Services Section End -->
-
-
+   
+   
    <!-- Portfolio Section
    ================================================== -->
    <section id="portfolio">
@@ -248,10 +231,7 @@
       <div class="row section-head">
          <div class="col full">
             <h2>Products</h2>
-            <p class="desc">Check out our latest Products.</p>
-			<p class="intro">ACube has created a niche for itself in the export of Textiles, 
-			Apparel, Baby Clothing, Handmade Paper items; Fashion Jewelery, Yoga Products and
-			HandiCrafts</p>
+			<p class="intro">ACube World has created a niche for itself in the export of Clothing & Accessories and Home & Living artisan products. We were only company selected in NYNow incubator programe for Artisans products from India.</p>
          </div>
       </div>
 
@@ -259,38 +239,20 @@
 		   <!-- Portfolio Wrapper -->
 		   <div id="portfolio-wrapper">
 
-			   <div class="col portfolio-item">
-               <div class="item-wrap">
-					   <a href="#" data-reveal-id="modal-01"><img src="images/portfolio/apparel_textiles1.jpg" alt=""/></a>
-					   <div class="portfolio-item-meta">
-						   <h5><a href="#">Apparel & Textiles</a></h5>
-					   </div>
-               </div>
-			   </div>
-
-            <div class="col portfolio-item">
-               <div class="item-wrap">
-					   <a href="#" data-reveal-id="modal-02"><img src="images/portfolio/fashion_jewelry_accessories1.jpg" alt=""/></a>
-					   <div class="portfolio-item-meta">
-						   <h5><a href="#"> Fashion Jewelry & Accessories</a></h5>
-					   </div>
-               </div>
-			   </div>
-
             <div class="col portfolio-item">
                <div class="item-wrap">
 					   <a href="#" data-reveal-id="modal-03"><img src="images/portfolio/handicrafts_home_furnishings1.jpg" alt=""/></a>
 					   <div class="portfolio-item-meta">
-						   <h5><a href="#">Handicrafts and Home Furnishings</a></h5>
+						   <h5><a href="#" data-reveal-id="modal-03">Home & Living</a></h5>
 					   </div>
                </div>
 			   </div>
 
             <div class="col portfolio-item">
                <div class="item-wrap">
-					   <a href="#" data-reveal-id="modal-04"><img src="images/portfolio/handmade_paper_jute_products1.jpg" alt="" /></a>
+					   <a href="#" data-reveal-id="modal-04"><img src="images/portfolio/apparel_and_accessories.jpg" alt="" /></a>
 					   <div class="portfolio-item-meta">
-						   <h5><a href="#">Handmade Paper and Jute Products</a></h5>
+						   <h5><a href="#" data-reveal-id="modal-04">Clothing & Accessories</a></h5>
 					   </div>
                </div>
 			   </div>
@@ -306,17 +268,8 @@
 
       <!-- modal-01 -->
 	   <div id="modal-01" class="reveal-modal">
-
-		   <img class="scale-with-grid" src="images/portfolio/modals/apparel_textiles1.jpg" alt="" />
-
-		   <div class="description-box">
-			   <h4>Apparel & Textiles</h4>
-			   <p>India and in that Jaipur, is famous for its HandBlock printing, vibrant colors, Cotton & Silk fabric and the perfect blend of  traditional techniques with contemporary designs. If you have a concept in mind we will help you make it a reality. 
-			   We work with various designers and stores across the world to manufacture and give life to their collections!</p>
-		   </div>
-
+		   <div><iframe src='http://online.pubhtml5.com/uuqn/enlx/' frameborder='0' allowfullscreen='true' ></iframe></div>
          <div class="link-box">
-            <a href="http://hutify.com/ACube.World.html">Details</a>
 		      <a class="close-reveal-modal">Close</a>
          </div>
 
@@ -325,16 +278,15 @@
       <!-- modal-02 -->
 	   <div id="modal-02" class="reveal-modal">
 
-		   <img class="scale-with-grid" src="images/portfolio/modals/fashion_jewelry_accessories1.jpg" alt="" />
+		   <div><iframe src="http://online.pubhtml5.com/uuqn/toma/" frameborder="0" allowfullscreen=""></iframe></div>
 
-		   <div class="description-box">
+		 <!-- <div class="description-box">
 			   <h4>Fashion Jewelry & Accessories</h4>
 			   <p>We bring you a collection and MadeToOrder solution of -state-of-the art Fashion Jewelry in Silver, Semi-Precious Stones, Brass, 
-			   Blue Pottery, Zircon, Fligiree and designer jewelry. With the Fashion jewelry we offer you scarves, stoles, shawls to complete the accessory look!<p>
-         </div>
+			   Blue Pottery, Zircon, Fligiree and designer jewelry. With the Fashion jewelry we offer you scarves, stoles, shawls to complete the accessory look!</p>
+         </div>-->
 
          <div class="link-box">
-            <a href="http://hutify.com/ACube.World.html">Details</a>
 		      <a class="close-reveal-modal">Close</a>
          </div>
 
@@ -342,16 +294,9 @@
 
       <!-- modal-03 -->
 	   <div id="modal-03" class="reveal-modal">
-
-		   <img class="scale-with-grid" src="images/portfolio/modals/handicrafts_home_furnishings1.jpg" alt="" />
-
-		   <div class="description-box">
-			   <h4>Handicrafts & Home Furnishings</h4>
-			   <p>The famous Rajasthani Handicrafts in Blue Pottery, Marble, Rugs, Tapestries, Yoga Products, Furniture, Vintage Clocks and Bedspreads & Home Furnishings. Whatever your requirement - we will fulfill it! </p>
-         </div>
+		   <div><iframe src='http://online.pubhtml5.com/uuqn/xrhq/'  frameborder='0'  allowfullscreen='true' ></iframe></div>
 
          <div class="link-box">
-            <a href="http://hutify.com/ACube.World.html">Details</a>
 		      <a class="close-reveal-modal">Close</a>
          </div>
 
@@ -360,15 +305,8 @@
       <!-- modal-04 -->
 	   <div id="modal-04" class="reveal-modal">
 
-		   <img class="scale-with-grid" src="images/portfolio/modals/handmade_paper_jute_products1.jpg" alt="" />
-
-		   <div class="description-box">
-			   <h4>HandMade Paper & Jute Products</h4>
-			   <p>Complete Packaging and Stationery Products in HandCrafted Handmade Paper, Jute Fabric and Recycled Fabric Paper. </p>
-         </div>
-
+		  <div><iframe src='http://online.pubhtml5.com/uuqn/xyen/' frameborder='0' allowfullscreen='true' ></iframe></div>
          <div class="link-box">
-            <a href="http://hutify.com/ACube.World.html">Details</a>
 		      <a class="close-reveal-modal">Close</a>
          </div>
 
@@ -386,7 +324,6 @@
          </div>
 
          <div class="link-box">
-            <a href="http://hutify.com/ACube.World.html">Details</a>
 		      <a class="close-reveal-modal">Close</a>
          </div>
 
@@ -403,7 +340,6 @@
          </div>
 
          <div class="link-box">
-            <a href="http://hutify.com/ACube.World.html">Details</a>
 		      <a class="close-reveal-modal">Close</a>
          </div>
 
@@ -420,7 +356,6 @@
          </div>
 
          <div class="link-box">
-            <a href="http://hutify.com/ACube.World.html">Details</a>
 		      <a class="close-reveal-modal">Close</a>
          </div>
 
@@ -438,13 +373,79 @@
          </div>
 
          <div class="link-box">
-            <a href="http://www.behance.net">Details</a>
 		      <a class="close-reveal-modal">Close</a>
          </div>
 
 	   </div> <!-- modal-08 End -->
 
    </section> <!-- Portfolio End -->
+   
+   <section id="impact">
+
+      <div class="row section-head">
+         <div class="col full">
+            <h2>Ethos</h2>
+			<div class="intro"ACube World is driven to work with and tap into the creative capacity of artisans in society who have so far remained under represented.
+				<p class="desc">What's in a artisan product?</p>
+				<ul class="mrLt25">
+					<li>Beautiful Patterns</li>
+					<li>Intricate details</li>
+					<li>The people who make it, The people who make it, The people who make it</li>
+				</ul>
+				<p>We began sourcing from small number of skilled artisans, working from one of co-founder's garage and artisans are still just as integral to every product we source for you. 
+				The artisan is an important factor in the equation of society and culture. The Village communities of craftsman have always been the center of the traditional crafts. 
+				They are not only artisans, they have wonderful qualities within them. Some of them are wonderful leaders, quality controllers, mentors. 
+				</p>
+			</div>
+	
+			<div class="intro" id="hiddenTextImpact" style="display:none;">
+				<p>Since begning we have placed artisans first, providing education and literacy programs and giving artisans the chance to rise up to new heights.
+
+				They never though in wildest dreams that someday they would be able to read and write.
+
+				They have now confidence that they can do anything in the world!
+
+				It is a very inspirational statement for us and challenge for us that how can we help them to grow with the organization. 
+
+				We continue to provide a sustainable living to those who may otherwise struggle. 
+
+				Artisans with bad eyesight can't work with lighter colors so we ask them to make products in higher contrast patterns so they can continue to work. 
+
+				They are thankful to our customers who ask us to work on simpler designs so that artisans are able to sustain work, and continue to enjoy it.  
+
+				With your support artisans have been able to transform their lives. 
+
+				A lot of artisans are now making multiple times as much they did working for contractors.
+
+				They are finally able to pay for children's education, extension of house and supporting family.
+
+				Some young artisans are primary earner in family since father's passing. They are now able to pay for all of sisters and brothers through college.
+				</p>
+
+
+				<p>ACube World lays importance in keeping family values alive. The first step in this process is empowering every woman of rural India by giving her access to a sustainable livelihood at her doorstep.
+
+				ACube World also source from skilled artisans who live in the most remote parts with little to no access to transport. The greatest challenge in these artisans’ lives is commuting to work and back, often resulting in families that live far apart. One of the key differentiation of the ACube World model is an artisan’s ability to not only work from home but have business travel to them.
+
+				We realized, working with the artisans, when a customer buys an artisan product, actually he is not just buying the product but he is also helping an artisan family with education, health care and a better life.
+				</p>
+
+				<p>ACube World has trained many artisans from scratch.<br/>
+
+				There are now many woman enrolled in our education programs.<br/>
+
+				Our health camps care for many artisans across India.<br/>
+
+				We provide life insurance and scholarships for many artisans.<br/>
+				</p>
+			</div>
+			<div id="showTextImpact" onclick='toggle2()' style="cursor:pointer;" class="intro">Show more...</div>
+         </div>
+      </div>
+
+      
+
+   </section> <!-- Our Impact End -->
 
    <!-- Journal Section
    ================================================== -->
@@ -454,16 +455,17 @@
          <div class="col full">
 			<h2>About Us</h2>
 			<p class="intro">			
-				ACube World was founded by professionals who left behind their flourishing corporate careers and life in the USA and returned to India.
+				ACube World was founded by professionals who left behind their flourishing corporate careers and life in Silicon Valley USA and returned to India.
 				Each one came from a different functional background and they put their heart, money and soul into creating a startup organization that 
 				could enable small and medium designers, entrepreneurs, boutiques and stores to source or get made unique products from India which are
 				artisan made, fair-trade, environment friendly, intensive with unique heritage Indian techniques and a process that minimizes wastage 
-				in production. We take up each task as an appropriate “project” and execute it like we did in our corporate jobs in Silicon Valley! We
-				aspire to be one stop shop to provide for an efficient, time-bound delivery and thereby saving our business clients personal cost and 
-				time in accomplishing their goals. 			
+				in production. 		
 			</p>	
 
-			<div class="intro" id="hiddenText" style="display:none;">	
+			<div class="intro" id="hiddenText" style="display:none;">
+				<p>We take up each task as an appropriate “project” and execute it like we did in our corporate jobs in Silicon Valley! We
+				aspire to be one stop shop to provide for an efficient, time-bound delivery and thereby saving our business clients personal cost and 
+				time in accomplishing their goals. 	</p>
 				<p class="desc"> What is our Vision? </p>
 				<p>
 					We specialize in bringing unique artisan made products to the world! We strive to build a business and a personal relationship based on 
@@ -572,7 +574,7 @@
 				big hit with all our global buyers!!!. </p>
 				<p>We hope to be enablers to every dreamer, artist and entrepreneur!</p>
 			</div>
-			<div id="showText" onclick='toggle()' style="cursor:pointer;">Show more...</div>
+			<div id="showText" onclick='toggle()' style="cursor:pointer;" class="intro">Show more...</div>
          </div>
       </div>
 
@@ -810,22 +812,11 @@
 
    </section>--> <!-- Call-to-Action Section End-->
 
-   <!-- Map Section
-   ================================================== -->
-   <section id="map">
-
-      <p class="map-error">Something went wrong... Unable to load map... Please try to enable javascript</p>
-
-   </section> <!-- Map Section End-->
-
-    <!-- Contact Section
-   ================================================== -->
    <section id="contact">
 
       <div class="row section-head">
          <div class="col full">
             <h2>Contact Us</h2>
-            <p class="desc">Get in touch with us.</p>
          </div>
       </div>
 
@@ -881,7 +872,7 @@
             <p>Nascetur augue hac platea enim, egestas pulvinar vutulvinar cum, ac eu.</p>-->
 
             <p>
-            ACube Enterprises LLP <br />
+            ACube World <br />
 			Anand Enclave, B10 JDA Staff Colony <br />
             Pratap Nagar, Jaipur - 302033 <br />
             Rajasthan, India			
@@ -891,16 +882,26 @@
 				<img alt="" src="images/phone_icon.png" class="vAlign mrRt5" width="30" height="30">+91 96490 78787
 			</div>
 			<div class="mrTp5 font13">
-				<img alt="" src="images/whatsapp_icon.png" class="vAlign mrRt5" width="30" height="30">+91 97999 16333
+				<img alt="" src="images/whatsapp_icon.png" class="vAlign mrRt5" width="30" height="30">+91 70146 73671
 			</div>
 			<div class="mrTp5 font13">
-				<img alt="" src="images/email_icon.png" class="vAlign mrRt5" width="30" height="30">marketing[@]acubeworld.com
+				<img alt="" src="images/email_icon.png" class="vAlign mrRt5" width="30" height="30">marketing@acubeworld.com
 			</div>
          </aside>
 
       </div>
 
    </section> <!-- Contact Section End-->
+      <!-- Map Section
+   ================================================== -->
+   <section id="map">
+
+      <p class="map-error">Something went wrong... Unable to load map... Please try to enable javascript</p>
+
+   </section> <!-- Map Section End-->
+
+    <!-- Contact Section
+   ================================================== -->
 
    <!-- footer
    ================================================== -->
@@ -910,18 +911,13 @@
 
          <div class="col g-7">
             <ul class="copyright">
-               <li>&copy; 2017 ACube Enterprises LLP</li>
+               <li>&copy; 2018 ACube Enterprises LLP</li>
             </ul>
          </div>
 
          <div class="col g-5 pull-right">
             <ul class="social-links">
-               <li><a href="#"><i class="icon-facebook"></i></a></li>
-               <li><a href="#"><i class="icon-twitter"></i></a></li>
-               <li><a href="#"><i class="icon-google-plus-sign"></i></a></li>
-               <li><a href="#"><i class="icon-linkedin"></i></a></li>
-               <li><a href="#"><i class="icon-skype"></i></a></li>
-               <li><a href="#"><i class="icon-rss-sign"></i></a></li>
+               <li><a href="https://www.facebook.com/pg/Acubeworldwide" target="_blank"><i class="icon-facebook"></i></a></li>
             </ul>
          </div>
 
