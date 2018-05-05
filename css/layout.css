@@ -328,6 +328,10 @@ ul#nav li.active a { color: #b6d969; }
 #portfolio .section-head p.desc, #journal .section-head p.desc { color: #516534; }
 #portfolio .section-head .intro, #journal .section-head .intro { color: #659331; }
 
+a.greenAnchor {color:#659331;
+text-decoration:underline;}
+a.greenAnchor:hover{color:#516534;}
+
 /* Portfolio Content */
 #portfolio-wrapper { margin-top: 10px; }
 #portfolio-wrapper .col {
